@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f6f7fb, #dce3f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card {
+  position: relative;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  display: inline-block;
+}
+
+video, canvas {
+  border-radius: 10px;
+}
+
+#overlay {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.emotion-label {
+  margin-top: 10px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #444;
+  background: #e8f0fe;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.controls {
+  margin-top: 12px;
+}
+
+.controls button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 0 5px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background: #357abd;
+}
+
+#confidence {
+  margin-top: 15px;
+}
+.bar {
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 4px 0;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bar-fill {
+  height: 12px;
+  background: #4caf50;
+}
+.bar-label {
+  font-size: 0.85em;
+  margin-top: 2px;
+}

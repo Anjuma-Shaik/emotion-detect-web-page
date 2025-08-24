@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emotion Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎭 Emotion Detection Web App</h1>
+
+    <div class="card">
+      <video id="video" width="640" height="480" autoplay muted></video>
+      <canvas id="overlay"></canvas>
+
+      <div id="result" class="emotion-label">Loading...</div>
+      <div class="controls">
+        <button id="toggleVoice">🔊 Voice ON</button>
+        <button id="restartCam">🔄 Restart Camera</button>
+      </div>
+    </div>
+
+    <div id="confidence"></div>
+  </div>
+
+  <!-- Face API -->
+  <script defer src="https://cdn.jsdelivr.net/npm/face-api.js/dist/face-api.min.js"></script>
+  <script defer src="script.js"></script>
+</body>
+</html>
